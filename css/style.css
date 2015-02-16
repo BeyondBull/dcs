@@ -231,9 +231,11 @@ font-size: .8em;
 	font-variant: small-caps;
 }
 @media screen and (min-width: 769px) {
+/*
 	#background {
     background:  url(../img/backgroundLandHD.jpg) no-repeat center top;
 	}
+*/
 
 	#home-page-content {
 		margin: -1150px 10%;
