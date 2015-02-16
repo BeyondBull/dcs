@@ -129,7 +129,7 @@ li {
 	}
 }
 /*Hamberger button removed, nav list appears on right*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
 	#title h1 {
 		font-size: 1.5em;
 		padding-top: 7px;
