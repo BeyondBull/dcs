@@ -208,7 +208,7 @@ font-size: .8em;
 }
 #home-page-content {
 	width: 80%;
-	margin: -1350px 10%;
+	margin: -1430px 10%;
 	position: relative;
   top: 4.7em;
   float: left;
@@ -244,7 +244,7 @@ font-size: .8em;
 	background: #fff;
 	background-position: center top;
 	margin: 95px 5%;
-	height: 1200px;
+	height: 1300px;
 	opacity: .9;
 }
 @media screen and (min-width: 768px) {
