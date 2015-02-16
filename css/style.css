@@ -202,13 +202,6 @@ font-size: .8em;
 /*  Home page 
 ------------------------------------------
 ------------------------------------------ */
-#home-page {
-	background-image: url(../img/backgroundLandHD.jpg);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
 #home-page-content {
 	width: 80%;
 	margin: -1430px 10%;
@@ -230,6 +223,16 @@ font-size: .8em;
 #home-page-content h2 {
 	font-variant: small-caps;
 }
+@media screen and (min-width: 375px) {
+	#home-page {
+		background-image: url(../img/backgroundLandHD.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	#home-page-content {
 		margin: -1150px 10%;
