@@ -1,0 +1,351 @@
+/*  General
+------------------------------------------
+------------------------------------------ */
+body {
+	background-color: #eee;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	font-family: 'Crimson Text', serif;
+}
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+h1 {
+	font-weight: 100;
+}
+p {
+	font-family: 'Crimson Text', serif;
+}
+ul {
+	padding: 0;
+}
+li {
+	font-family: 'Crimson Text', serif;
+	list-style: none;
+}
+
+
+
+/*  General page/column layout
+------------------------------------------
+------------------------------------------ */
+.col_content {
+	width: 90%;
+	margin: auto;
+	padding: 5% 0;
+}
+.col_content li {
+	margin-bottom: 5px;
+}
+.col {
+	margin-top: 2%;
+}
+.secondary ul {
+	padding-bottom: 20px;
+}
+/*Opaque square over background image*/
+#opaque-page-background {
+	float: left;
+	width: 90%;
+	background: #fff;
+	background-position: center top;
+	margin: 95px 5%;
+	height: 1200px;
+	opacity: .9;
+}
+
+/* Phones to Tablets */
+@media only screen and (min-width: 481px) {
+	.col {
+		float: left;
+	}
+	.main {
+		width: 66%;
+	}
+	.secondary {
+		width: 32%; 
+	}
+	.secondary {
+		margin-left: 2%;
+	}
+}
+@media screen and (min-width: 768px) {
+	#opaque-page-background {
+		height: 1000px;
+	}
+}
+@media screen and (min-width: 1250px) {
+	#opaque-page-background {
+		margin-top: 130px;
+	}
+}
+
+
+
+/*  Header
+------------------------------------------
+------------------------------------------ */
+#page-header {
+	width: 100%;
+	float: left;
+	position: fixed;
+	z-index: 2;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 5px 0px #333;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px 0px 5px 0px #333;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 0px 5px 0px #333;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+#title {
+	float: left;
+	margin-left: 15px;
+	font-variant: small-caps;
+}
+#title h1 {
+	color: #777;
+	font-size: 1.3em;
+	padding-top: 15px;
+}
+#nav.js {
+	padding-top: 80px;
+	margin: 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+#nav ul {
+	list-style: none;
+}
+#nav li {
+	width: 100%;
+	padding: 13px 0;
+	border-top: #ddd solid 1px;
+}
+#nav a {
+	padding: 0 70px;
+}
+/*Menu button press, Nav list appears drop down*/
+@media screen and (max-width: 768px) {
+	#menu {
+		width:1.4em;
+		display: block;
+		color: #ccc;
+		background:#fff;
+		border-radius: 5px;
+		font-size:2em;
+		text-align: center;
+		float: right;
+		width: 45px;
+		height: 45px;
+		margin: 15px;
+		-webkit-box-shadow: 1px 1px 2px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+		-moz-box-shadow:    1px 1px 2px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+		box-shadow:         1px 1px 2px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	}
+	#nav.js {
+		display: none;
+	}
+}
+/*Hamberger button removed, nav list appears on right*/
+@media screen and (min-width: 768px) {
+	#title h1 {
+		font-size: 1.5em;
+		padding-top: 7px;
+	}
+/*Hamberger button removed, nav list appears on right*/
+	#menu {
+		display: none;
+	}
+	#nav.js {
+		width: 55%;
+		float: right;
+		padding-top: 20px;
+	}
+	
+	#nav li {
+		display: inline-block;
+		width: 26.6666%;
+		border: none;
+		text-align: right;
+	}
+	#nav a:hover {
+		color: #A60014;
+	}
+}
+@media screen and (min-width: 1250px) {
+	#title h1 {
+		font-size: 2em;
+	}
+}
+
+
+
+/*  Footer
+------------------------------------------
+------------------------------------------ */
+#page-footer {
+	width: 100%;
+	float: left;
+	z-index: 2;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 5px 0px #333;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px 0px 5px 0px #333;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 0px 5px 0px #333;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+#page-footer ul {
+	text-align: center;
+	width: 100%;
+	float: left;
+	list-style: none;
+}
+#page-footer li {
+padding-top: 3px;
+font-weight: 100;
+font-size: .8em;
+}
+#page-footer a {
+	color: #A60014;
+}
+/* Phones to Tablets */
+@media only screen and (min-width: 481px) {
+#page-footer ul {
+		width: 50%;
+	}
+}
+
+
+
+/*  Home page 
+------------------------------------------
+------------------------------------------ */
+#home-page {
+	background-image: url(../img/background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#home-page-content {
+	width: 80%;
+	margin: -1350px 10%;
+	position: relative;
+  top: 4.7em;
+  float: left;
+}
+#home-page-content p {
+	font-size: 1.1em;
+}
+#home-page-content li {
+	padding-left: 3px;
+	padding-top: 3px;
+	font-size: 1em;
+	border-bottom: #ccc solid 1px;
+	border-left: #A60014 solid 1px;
+	margin: 0;
+}
+#home-page-content h2 {
+	font-variant: small-caps;
+}
+@media screen and (min-width: 768px) {
+	#home-page-content {
+		margin: -1150px 10%;
+	}
+}
+@media screen and (min-width: 1250px) {
+	#home-page {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+}
+
+
+
+/*  Gallery page
+------------------------------------------
+------------------------------------------ */
+.gallery-page-content {
+	width: 90%;
+	margin: 5%;
+	padding-top: 70px;
+	float: left;
+	
+}
+.gallery {
+  margin-bottom: 10px;
+  list-style: none;
+  height: 1000px;
+}
+.gallery li {
+  float: left;
+  width: 96%;
+  margin: 1%;
+}
+.thumb {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.thumb img {
+  width: 100%;
+} 
+.thumb a .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(238, 238, 238, 0.68);
+  transition: all 0.8s ease-out;
+  opacity: 0;
+}
+.thumb a:hover .mask {
+  opacity:1;
+} 
+.thumb a .mask h3 {
+  display:inline-block;
+  margin-top: 20%;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background: #505050;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.thumb a .mask p {
+  font-size: 15px;
+  color: #505050;
+}
+/* Phones to Tablets */
+@media only screen and (min-width: 481px) {
+  .gallery li {
+    width: 48%;
+  }
+}
+@media all and (max-width: 767px) {
+  .thumb a .mask {
+    position: relative;
+    background: none;
+    opacity: 1;
+    margin-top: 0;
+    }
+  .thumb a .mask h3 {
+    margin-top: 0;
+    }
+}
+.mask em {
+  font-family: Baskerville, 'Adobe Garamond Pro', Times, serif;
+  font-style: italic;
+} 
+.hide * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
