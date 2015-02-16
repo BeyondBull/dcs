@@ -201,10 +201,11 @@ font-size: .8em;
 ------------------------------------------
 ------------------------------------------ */
 #home-page {
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/backgroundLandHD.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
 }
 #home-page-content {
 	width: 80%;
