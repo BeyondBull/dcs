@@ -3,7 +3,7 @@ $("#menu").click(function(){
 	$("#nav").toggle();
 });
 $(window).resize(function(){
-	if(window.innerWidth > 767) {
+	if(window.innerWidth > 769) {
 		$("#nav").removeAttr("style");
 	}
 });
