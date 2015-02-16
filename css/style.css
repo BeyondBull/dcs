@@ -230,9 +230,9 @@ font-size: .8em;
 #home-page-content h2 {
 	font-variant: small-caps;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	#background {
-    background: url(../img/backgroundLandHD.jpg) no-repeat center top;
+    background:  url(../img/backgroundLandHD.jpg) no-repeat center top;
 	}
 
 	#home-page-content {
