@@ -202,7 +202,7 @@ font-size: .8em;
 ------------------------------------------ */
 #home-page {
 	background-image: url(../img/background.jpg);
-	background-position: center center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
