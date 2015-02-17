@@ -8,23 +8,28 @@ body {
 a {
 	text-decoration: none;
 	color: #333;
-	font-family: 'Crimson Text', serif;
-}
-h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
 h1 {
-	font-weight: 100;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+} 
+
+h2, h3 {
+	font-family: 'Open Sans', sans-serif;
 }
 p {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+
 }
 ul {
 	padding: 0;
 }
 li {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	list-style: none;
 }
 
@@ -93,7 +98,8 @@ li {
 	padding-top: 80px;
 	margin: 0;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1em;
+	text-transform: uppercase;
 }
 #nav ul {
 	list-style: none;
@@ -105,6 +111,9 @@ li {
 }
 #nav a {
 	padding: 0 70px;
+	color: #777;
+
+
 }
 /*Menu button press, Nav list appears drop down*/
 @media screen and (max-width: 768px) {
@@ -152,6 +161,10 @@ li {
 		border: none;
 		text-align: right;
 	}
+	#nav a.selected {
+		font-weight: 400;
+		color: #666;
+	}
 	#nav a:hover {
 		color: #A60014;
 	}
@@ -186,9 +199,11 @@ li {
 padding-top: 3px;
 font-weight: 100;
 font-size: .8em;
+font-family: 'Crimson Text', serif;
 }
 #page-footer a {
 	color: #A60014;
+	font-family: 'Crimson Text', serif;
 }
 /* Phones to Tablets */
 @media only screen and (min-width: 481px) {
@@ -211,17 +226,19 @@ font-size: .8em;
 }
 #home-page-content p {
 	font-size: 1.1em;
+	text-align: center;
 }
 #home-page-content li {
 	padding-left: 3px;
-	padding-top: 3px;
-	font-size: 1em;
+	padding-top: 5px;
+	font-size: .9em;
 	border-bottom: #ccc solid 1px;
 	border-left: #A60014 solid 1px;
 	margin: 0;
 }
 #home-page-content h2 {
 	font-variant: small-caps;
+	text-align: center;
 }
 @media screen and (min-width: 375px) {
 	#home-page {
@@ -244,7 +261,7 @@ font-size: .8em;
 }
 
 /*Opaque square over background image*/
-#opaque-page-background {
+#opaque-home-page-layer {
 	float: left;
 	width: 90%;
 	background: #fff;
@@ -254,7 +271,7 @@ font-size: .8em;
 	opacity: .9;
 }
 @media screen and (max-width: 375px) {
-	#opaque-page-background {
+	#opaque-home-page-layer {
 	-webkit-box-shadow: 1px 1px 2px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 	-moz-box-shadow:    1px 1px 2px 1px #ccc;  /* Firefox 3.5 - 3.6 */
 	box-shadow:         1px 1px 2px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -262,12 +279,12 @@ font-size: .8em;
 }
 
 @media screen and (min-width: 768px) {
-	#opaque-page-background {
+	#opaque-home-page-layer {
 		height: 1000px;
 	}
 }
 @media screen and (min-width: 1250px) {
-	#opaque-page-background {
+	#opaque-home-page-layer {
 		margin-top: 130px;
 	}
 }
@@ -350,10 +367,6 @@ font-size: .8em;
     margin-top: 0;
     }
 }
-.mask em {
-  font-family: Baskerville, 'Adobe Garamond Pro', Times, serif;
-  font-style: italic;
-} 
 .hide * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
