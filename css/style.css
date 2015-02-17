@@ -137,7 +137,7 @@ li {
 		display: none;
 	}
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 401px) {
 		#title h1 {
 		font-size: 1.5em;
 		padding-top: 7px;
@@ -240,7 +240,7 @@ font-family: 'Crimson Text', serif;
 	font-variant: small-caps;
 	text-align: center;
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 401px) {
 	#home-page {
 		background-image: url(../img/backgroundLandHD.jpg);
 		background-position: center top;
@@ -373,3 +373,95 @@ font-family: 'Crimson Text', serif;
   -ms-transition: none !important;
   -o-transition: none !important;
 }
+
+
+
+/*  Contact page 
+------------------------------------------
+------------------------------------------ */
+#contact-page-content {
+	width: 80%;
+	margin: -730px 10%;
+	position: relative;
+  top: 4.7em;
+  float: left;
+}
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em; 
+}  
+.contact-info li {
+	padding-bottom: 7px
+}
+.contact-info a {
+  display:block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../icon/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../icon/mail.png');
+}
+
+.contact-info li.address a {
+  background-image: url('../icon/globe.png');
+}
+
+@media screen and (min-width: 401px) {
+	#contact-page {
+		background-image: url(../img/backgroundLandHD.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#home-page-content {
+		margin: 0px 10%;
+	}
+}
+@media screen and (min-width: 1250px) {
+	#home-page {
+	}
+}
+
+/*Opaque square over background image*/
+#opaque-contact-page-layer {
+	float: left;
+	width: 90%;
+	background: #fff;
+	background-position: center top;
+	margin: 95px 5%;
+	height: 600px;
+	opacity: .9;
+}
+@media screen and (max-width: 375px) {
+	#opaque-contact-page-layer {
+	-webkit-box-shadow: 1px 1px 2px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    1px 1px 2px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         1px 1px 2px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#opaque-contact-page-layer {
+	}
+}
+@media screen and (min-width: 1250px) {
+	#opaque-contact-page-layer {
+		margin-top: 130px;
+	}
+}
+
+
