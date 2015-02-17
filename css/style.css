@@ -219,7 +219,7 @@ font-family: 'Crimson Text', serif;
 ------------------------------------------ */
 #home-page-content {
 	width: 80%;
-	margin: -1430px 10%;
+	margin: -1530px 10%;
 	position: relative;
   top: 4.7em;
   float: left;
@@ -267,7 +267,7 @@ font-family: 'Crimson Text', serif;
 	background: #fff;
 	background-position: center top;
 	margin: 95px 5%;
-	height: 1300px;
+	height: 1400px;
 	opacity: .9;
 }
 @media screen and (max-width: 375px) {
