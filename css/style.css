@@ -1,10 +1,10 @@
 /*  General
-------------------------------------------
------------------------------------------- */
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
 body {
 	background-color: #eee;
 }
-
 a {
 	text-decoration: none;
 	color: #333;
@@ -15,14 +15,12 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 } 
-
 h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-
 }
 ul {
 	padding: 0;
@@ -36,8 +34,9 @@ li {
 
 
 /*  General page/column layout
-------------------------------------------
------------------------------------------- */
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
 .col_content {
 	width: 90%;
 	margin: auto;
@@ -54,7 +53,7 @@ li {
 }
 
 /* Phones to Tablets */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 641px) {
 	.col {
 		float: left;
 	}
@@ -72,8 +71,9 @@ li {
 
 
 /*  Header
-------------------------------------------
------------------------------------------- */
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
 #page-header {
 	width: 100%;
 	float: left;
@@ -137,7 +137,7 @@ li {
 		display: none;
 	}
 }
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 641px) {
 		#title h1 {
 		font-size: 1.5em;
 		padding-top: 7px;
@@ -178,8 +178,9 @@ li {
 
 
 /*  Footer
-------------------------------------------
------------------------------------------- */
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
 #page-footer {
 	width: 100%;
 	float: left;
@@ -196,17 +197,17 @@ li {
 	list-style: none;
 }
 #page-footer li {
-padding-top: 3px;
-font-weight: 100;
-font-size: .8em;
-font-family: 'Crimson Text', serif;
+	padding-top: 3px;
+	font-weight: 100;
+	font-size: .8em;
+	font-family: 'Crimson Text', serif;
 }
 #page-footer a {
 	color: #A60014;
 	font-family: 'Crimson Text', serif;
 }
 /* Phones to Tablets */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 641px) {
 #page-footer ul {
 		width: 50%;
 	}
@@ -215,8 +216,9 @@ font-family: 'Crimson Text', serif;
 
 
 /*  Home page 
-------------------------------------------
------------------------------------------- */
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
 #home-page-content {
 	width: 80%;
 	margin: -1530px 10%;
@@ -240,7 +242,7 @@ font-family: 'Crimson Text', serif;
 	font-variant: small-caps;
 	text-align: center;
 }
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 641px) {
 	#home-page {
 		background-image: url(../img/backgroundLandHD.jpg);
 		background-position: center top;
@@ -249,7 +251,6 @@ font-family: 'Crimson Text', serif;
 		background-size: cover;
 	}
 }
-
 @media screen and (min-width: 768px) {
 	#home-page-content {
 		margin: -1150px 10%;
@@ -259,7 +260,6 @@ font-family: 'Crimson Text', serif;
 	#home-page {
 	}
 }
-
 /*Opaque square over background image*/
 #opaque-home-page-layer {
 	float: left;
@@ -270,14 +270,13 @@ font-family: 'Crimson Text', serif;
 	height: 1400px;
 	opacity: .9;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 641px) {
 	#opaque-home-page-layer {
 	-webkit-box-shadow: 1px 1px 2px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 	-moz-box-shadow:    1px 1px 2px 1px #ccc;  /* Firefox 3.5 - 3.6 */
 	box-shadow:         1px 1px 2px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 	}
 }
-
 @media screen and (min-width: 768px) {
 	#opaque-home-page-layer {
 		height: 1000px;
@@ -292,14 +291,14 @@ font-family: 'Crimson Text', serif;
 
 
 /*  Gallery page
-------------------------------------------
------------------------------------------- */
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
 .gallery-page-content {
 	width: 90%;
 	margin: 5%;
 	padding-top: 70px;
 	float: left;
-	
 }
 .gallery {
   margin-bottom: 10px;
@@ -345,13 +344,12 @@ font-family: 'Crimson Text', serif;
   color: #fff;
   border-radius: 2px;
 }
-
 .thumb a .mask p {
   font-size: 15px;
   color: #505050;
 }
 /* Phones to Tablets */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 641px) {
   .gallery li {
     width: 48%;
   }
@@ -377,8 +375,9 @@ font-family: 'Crimson Text', serif;
 
 
 /*  Contact page 
-------------------------------------------
------------------------------------------- */
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
 #contact-page-content {
 	width: 80%;
 	margin: -730px 10%;
@@ -416,7 +415,7 @@ font-family: 'Crimson Text', serif;
   background-image: url('../icon/globe.png');
 }
 
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 641px) {
 	#contact-page {
 		background-image: url(../img/backgroundLandHD.jpg);
 		background-position: center top;
@@ -425,9 +424,6 @@ font-family: 'Crimson Text', serif;
 		background-size: cover;
 	}
 }
-
-
-/*Opaque square over background image*/
 #opaque-contact-page-layer {
 	float: left;
 	width: 90%;
@@ -437,14 +433,13 @@ font-family: 'Crimson Text', serif;
 	height: 600px;
 	opacity: .9;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 641px) {
 	#opaque-contact-page-layer {
 	-webkit-box-shadow: 1px 1px 2px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 	-moz-box-shadow:    1px 1px 2px 1px #ccc;  /* Firefox 3.5 - 3.6 */
 	box-shadow:         1px 1px 2px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 	}
 }
-
 @media screen and (min-width: 1250px) {
 	#opaque-contact-page-layer {
 		margin-top: 130px;
